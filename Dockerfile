@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . /app
 RUN pyinstaller taoSync.spec
 
-FROM dr34m/tao-sync:not-for-use-alpine
+FROM baishicoke/openlist-sync:not-for-use-alpine
 VOLUME /app/data
 WORKDIR /app
 COPY --from=builder /app/dist/taoSync /app/
