@@ -4,7 +4,7 @@ on:
   push:
     branches: [ 'main' ]
     paths: [ 'dockerfiles/alpine.Dockerfile' ]
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build_docker:
