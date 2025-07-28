@@ -1,4 +1,4 @@
-FROM dr34m/tao-sync:not-for-use-pip-req as builder
+FROM baishicoke/openlist-sync:not-for-use-pip-req as builder
 WORKDIR /app
 COPY . /app
 RUN pyinstaller taoSync.spec
