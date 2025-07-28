@@ -4,7 +4,7 @@ on:
   push:
     branches: [ 'main' ]
     paths: [ 'dockerfiles/pyinstaller.Dockerfile' ]
-    workflow_dispatch: 
+  workflow_dispatch: 
 
 jobs:
   build_docker:
